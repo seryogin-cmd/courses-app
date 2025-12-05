@@ -1,0 +1,25 @@
+.search {
+  width: 100%;
+  max-width: 315px;
+  
+  input {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-gray-600;
+    padding: 11px 16px;
+    border: 1px solid $color-gray-400;
+    border-radius: 4px;
+    background-color: $color-default-white;
+    width: 100%;
+
+    &::placeholder {
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: $color-gray-600;
+    }
+  }
+}

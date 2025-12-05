@@ -1,0 +1,43 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+
+  &__btn {
+    position: relative;
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: $color-gray-600;
+    background-color: $color-default-white;
+    border: 1px solid $color-default-white;
+    border-radius: 4px;
+    padding: 10px 30px 10px 20px;
+    cursor: pointer;
+    transition: $trans-default;
+
+    &--active {
+      color: $color-primary;
+      border: 1px solid $color-primary;
+    }
+
+    &::after {
+      position: absolute;
+      content: attr(data-count-category);
+      font-weight: 900;
+      font-size: 10px;
+      line-height: 150%;
+      text-align: center;
+      color: $color-primary;
+      top: 10px;
+      right: 20px;
+    }
+
+    @include hover-focus {
+      border: 1px solid $color-primary;
+    }
+  }
+}
