@@ -1,5 +1,10 @@
 # Создайте .gitignore с базовыми правилами
 cat > .gitignore << 'EOF'
+
+echo "node_modules/" >> .gitignore
+echo "*.pem" >> .gitignore
+echo "*.key" >> .gitignore
+
 # Dependencies
 node_modules/
 npm-debug.log*
