@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта" />
+    <title>Project</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"></header>
+      <main>
+        <section class="courses">
+          <div class="container">
+            <div class="courses__wrapper">
+              <p class="courses__description">Enjoy your studying!</p>
+              <h1 class="courses__title">Our online courses</h1>
+              <div class="courses__filters">
+                <ul class="tabs">
+                  <li class="tabs__item">
+                    <button class="tabs__btn" type="button">All</button>
+                  </li>
+                  <li class="tabs__item">
+                    <button class="tabs__btn" type="button">Marketing</button>
+                  </li>
+                  <li class="tabs__item">
+                    <button class="tabs__btn" type="button">Management</button>
+                  </li>
+                  <li class="tabs__item">
+                    <button class="tabs__btn" type="button">
+                      HR & Recruting
+                    </button>
+                  </li>
+                  <li class="tabs__item">
+                    <button class="tabs__btn" type="button">Design</button>
+                  </li>
+                  <li class="tabs__item">
+                    <button class="tabs__btn" type="button">Development</button>
+                  </li>
+                </ul>
+                <div class="search">
+                  <input
+                    type="text"
+                    name="search-course"
+                    placeholder="Search course..."
+                  />
+                </div>
+              </div>
+              <ul class="courses__list"></ul>
+              <button class="courses__more" type="button">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="24"
+                  height="24"
+                >
+                  <use href="img/sprite.svg#convert"></use></svg
+                ><span>Load more</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+
+    <template id="card">
+      <li class="courses__item">
+        <a class="courses__link" href="">
+          <div class="courses__img">
+            <img src="" alt="" width="390" height="240" />
+          </div>
+          <div class="courses__content">
+            <span class="courses__badge"></span>
+            <h3 class="courses__subtitle"></h3>
+            <div class="courses__info">
+              <strong class="courses__price"></strong>
+              <span class="courses__speaker"></span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </template>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
