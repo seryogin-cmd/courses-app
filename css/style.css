@@ -308,7 +308,7 @@ button,
   left: -36%;
   width: 83px;
   height: 44px;
-  background-image: url("../../img/svg/shapes_2.svg");
+  background-image: url("../img/svg/shapes_2.svg");
   z-index: -1;
 }
 
@@ -319,7 +319,7 @@ button,
   right: -22%;
   width: 85px;
   height: 85px;
-  background-image: url("../../img/svg/shapes_1.svg");
+  background-image: url("../img/svg/shapes_1.svg");
   z-index: -1;
 }
 
